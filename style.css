@@ -73,3 +73,10 @@ body {
     transform: translateY(0);
     box-shadow: 0 2px 10px rgba(74, 144, 226, 0.4);
 }
+
+my-lotto-ball {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  border: 1px solid red;
+}

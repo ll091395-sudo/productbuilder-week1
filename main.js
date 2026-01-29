@@ -55,7 +55,7 @@ class LottoBall extends HTMLElement {
   }
 }
 
-customElements.define('my-lotto-ball', LottoBall);
+customElements.define('lotto-ball', LottoBall);
 
 document.getElementById('generate-btn').addEventListener('click', () => {
   const resultsContainer = document.getElementById('results');
@@ -70,7 +70,7 @@ document.getElementById('generate-btn').addEventListener('click', () => {
   const sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
 
   sortedNumbers.forEach(number => {
-    const lottoBall = document.createElement('my-lotto-ball');
+    const lottoBall = document.createElement('lotto-ball');
     lottoBall.setAttribute('number', number);
     resultsContainer.appendChild(lottoBall);
   });
